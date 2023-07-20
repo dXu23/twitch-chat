@@ -12,7 +12,7 @@
     });
 
     let chatMessages: ChatMessage[] = [];
-    ComfyJS.onChat = (user, message, _flags, _self, _extra) => {
+    $: ComfyJS.onChat = (user, message, _flags, _self, _extra) => {
         chatMessages.push({ user, message });
     }
 </script>
